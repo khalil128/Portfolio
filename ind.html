@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+      *{
+          padding: 0px;
+          margin: 0px;
+          box-sizing: border-box;
+          font-size: 30px;
+      }
+    .web {
+      background-color: rgb(27, 219, 233);
+      padding: 50px;
+      /* border: 2px solid transparent; */
+    }
+    body {
+      display: grid;
+      gap: 2px;
+    }
+    a{
+        margin: 0px 20px;
+    }
+
+    .webnav {
+      padding: 10px;
+      display: inline-block;
+    }
+
+    nav #navlogo {
+      margin-left: 50px;
+    }
+
+    #navpage{
+        float: right;
+        margin-right: 50px;
+        display: flex;
+    }
+    span {
+      color: red;
+    }
+    nav #pages {
+      display: flex;
+      flex-direction: row;
+    }
+    nav #pages li {
+      list-style: none;
+      margin: 0px 5px;
+    }
+    nav #pages li a {
+      text-decoration: none;
+      color: white;
+      margin: 0px 5px;
+    }
+
+    #home #form {
+      display: flex;
+      position: relative;
+      width: fit-content;
+      background-color: rgb(177, 115, 115);
+    }
+
+    #home #form #srch {
+      padding: 20px;
+    }
+    #home #form #srch {
+      padding: 20px;
+    }
+
+    .inp {
+      margin: 10px;
+    }
+    .inp:last-child {
+      position: absolute;
+      top: 12px;
+      right: 7px;
+      padding: 8px 12px;
+    }
+
+    #about {
+      /* width: fit-content;
+    height: fit-content; */
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #about div {
+      margin: 20px;
+      width: 400px;
+    }
+
+    #services {
+      /* width: fit-content;
+    height: fit-content; */
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    #services div {
+      margin: 20px;
+      width: 300px;
+    }
+
+    @media (max-width: 976px) {
+      /* nav {
+          position: relative;
+          width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      } */
+
+      nav #pages {
+      flex-direction: column;
+    }
+
+    #navpage{
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+         
+    
+    
+    
+    
+    
+    
+    }
+  </style>
+
+  <body>
+    <nav id="navbar" class="web webnav">
+      <label class="navele" id="navlogo">Portfo<span>lio</span></label>
+      <div class="navele" id="navpage">
+            <div class="navele" id="pages">
+              <li><a href="#">home</a></li>
+              <li><a href="#">home</a></li>
+              <li><a href="#">home</a></li>
+              <li><a href="#">home</a></li>
+            </div>
+            <div class="navele" id="btn">
+                <button>Subscribe</button>
+            </div>
+    </div>
+    </nav>
+
+    <div id="home" class="web">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, rem.</p>
+      <div id="form">
+        <input type="search" name="" class="inp" id="srch" />
+        <input type="submit" class="inp" value="o" />
+      </div>
+    </div>
+    <div id="about" class="web">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam itaque
+        voluptates mollitia harum laborum velit veritatis nostrum distinctio a
+        ut, vel nihil hic repudiandae impedit dolore corporis quidem eligendi
+        consectetur.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis natus
+        sed facilis quidem aperiam rerum, nesciunt perferendis eum iusto, odio
+        illum, voluptate excepturi sit rem aspernatur nostrum ea temporibus
+        quos.
+      </div>
+    </div>
+    <div id="services" class="web">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam itaque
+        voluptates mollitia harum laborum velit veritatis nostrum distinctio a
+        ut, vel nihil hic repudiandae impedit dolore corporis quidem eligendi
+        consectetur.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis natus
+        sed facilis quidem aperiam rerum, nesciunt perferendis eum iusto, odio
+        illum, voluptate excepturi sit rem aspernatur nostrum ea temporibus
+        quos.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis natus
+        sed facilis quidem aperiam rerum, nesciunt perferendis eum iusto, odio
+        illum, voluptate excepturi sit rem aspernatur nostrum ea temporibus
+        quos.
+      </div>
+    </div>
+    <div id="hire" class="web" style="text-align: center">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, rem.
+    </div>
+    <footer id="foot" class="web" style="text-align: center">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, rem.
+    </footer>
+  </body>
+</html>
